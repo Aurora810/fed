@@ -1,18 +1,23 @@
-function (a,b){
-    if(a>b){
-        return -1;
-    }else if(a===b){
-        return 0;
-    }else{
-        return 1;
+
+
+function getSingle(arrey) {
+    arrey.sort(
+        (a, b) => {
+            if (a > b) {
+                return -1;
+            } else if (a === b) {
+                return 0;
+            } else {
+                return 1;
+            }
+        );
+    for (let i = 0; i < arrey.length; i + 2) {
+        if (arrey[i] !== arrey[i + 2]) {
+            return [i];
+        }
     }
 }
 
-function getSingle(arrey){
-    arrey.sort((a,b)=>{});
-}
 
-a=[[1,2,3,4]];
-b=[[2,3,4,5]];
 
-console.log(getSingle([a],[b]);
+console.log(getSingle([1,1,2,2,3]);
