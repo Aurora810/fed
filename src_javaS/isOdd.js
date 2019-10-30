@@ -10,4 +10,4 @@ function isOdd(value) {
 console.log(isOdd(5));
 console.log(isOdd(0));
 console.log(isOdd('ciao'));
-console.log(isOdd(-6));
+console.log( isOdd(-6));
