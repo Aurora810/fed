@@ -8,16 +8,63 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
-    <form action="action" onsubmit="return check();">
+    <h1 id="target"></h1>
+    <form action="action" onclick="return check();">
         <input id="user">
         <button>OK</button>
     </form>
     <hr>
-   
-    <input  id="color">
-    <button onclick="change();">OK</button>
-    
+
+    <input id="color">
+    <button type="button" onclick="change();">OK</button>
+
+
+    <hr>
+
+
+    <form action="action" onclick="option();">
+        <select name="os" id='list'>
+            <option value="white" select>White</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+            <option value="green">Green</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <input id="first" onfocus="prova();">
+
+    <hr>
+
+    <input id="contr" onblur="second();">
+
+    <hr>
+
+    <input id="third" onmouseover="mouse(true);" onmouseout="mouse(false);">
+
+
+    <hr>
+    <img src="\img\gatti-divertenti_7.jpg" id="cat" onmouseout="gatto(false);" onmouseover="gatto(true);">
+
+
+
+    <hr>
+
+    <div>
+        <h4>Developer Info</h4>
+        <textarea id="devInfo"></textarea>
+        <button onclick="getInfo();">Get developer Info</button>
+    </div>
+
+    <div>
+        <h3>Profile</h3>
+        <input type="text" id="name">
+        <button onclick="profile();">Create</button>
+    </div>
 </body>
+
 
 </html>

@@ -1,0 +1,1 @@
+Name=Aurora Perrucci,job=developer,lang=Java,lang=C++
