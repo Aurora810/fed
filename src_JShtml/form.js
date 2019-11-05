@@ -12,6 +12,7 @@ function check() {
 function change() {
     document.getElementById("color");
     document.bgColor = color.value;
+    
 
 }
 
@@ -44,8 +45,10 @@ function mouse(area) {
     let z = document.getElementById("third");
     if (area === false) {
         z.style.height = "20px";
+        z.style.backgroundColor="white";
     } else {
-        z.style.height = "100px";
+        z.style.height = "100px"
+        z.style.backgroundColor="orange";
     }
 
 }
@@ -58,7 +61,7 @@ function gatto(increase) {
 
     } else {
         img.style.height = "535px";
-        document.bgColor = "skyblue";
+        document.bgColor = "violet";
     }
 
 
@@ -112,5 +115,5 @@ function getName() {
     }
     target.value += single[0][1] + '\n';
     target.value += single[1][1] + '\n';
-    
+
 }
