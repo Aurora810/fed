@@ -20,3 +20,37 @@ function roman(number) {
 
 
 console.log(roman(125));
+
+
+function romani(value) {
+    if (number < 1 && number > 3999) {
+        return undefined;
+    }
+    let n = Math.floor(value / 1000);
+    let resto = value % 1000;
+    let d = Math.floor(resto / 500);
+    resto = resto % 500;
+    let x = Math.floor(resto / 10);
+    resto = resto % 10;
+    ...//altre lettere come i num romani
+    let i = resto % 5;
+    let roman = '';
+    for (let j = 0; j < n; j++) {
+        roman += 'M';
+    }
+    if (d === 1 && c === 4) {
+        roman += 'CM';
+    } else if (d === 1 && c < 4) {
+        roman += 'D';
+        for (let j = 0; j = c; j++) {
+            roman += 'C';
+        }
+    } else if (d === 0 && c === 4) {
+        roman += 'CD';
+    } else {
+        for (let j = 0; j < c; j++) {
+            roman += 'C';
+        }
+    }
+
+}
