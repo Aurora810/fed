@@ -1,0 +1,17 @@
+.red{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:green;
+font-size:10pt;
+}
+
+.chanche{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20pt;
+    font-style: italic;
+    color:darkorchid;
+}
+
+#saluto{
+    font-size:30pt;
+    color: paleturquoise;
+}

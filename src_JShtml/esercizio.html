@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Your page
+    </title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="esercizio.js">
+    </script>
+    <style type="text/css">
+        @import url(mystyle.css);
+    </style>
+</head>
+
+<body>
+    <div>
+        <h3>Name</h3>
+        <input id="name">
+        <br>
+        <br>
+        <h3>Job</h3>
+        <input id="job">
+    </div>
+
+    <br>
+    <br>
+
+    <h3>Program Language</h3>
+    <input type="checkbox" id="langJ" name="lang" value="Java">
+    <label for="langJ">Java</label>
+    <input type="checkbox" id="langPy" name="lang" value="Python">
+    <label for="langPy">Python</label>
+    <input type="checkbox" id="langCpp" name="lang" value="Cpp">
+    <label for="langCpp">C++</label>
+    <input type="checkbox" id="JavaScript" name="lang" value="JavaScript">
+    <label for="langJS">Java Script</label>
+    <input type="checkbox" id="CSS" name="lang" value="CSS">
+    <label for="langCss">CSS</label>
+    <input type="checkbox" id="HTML" name="lang" value="HTML">
+    <label for="langHtml">HTML</label>
+
+    <br>
+    <br>
+    <div>
+        <button onclick="autoFiller();jobAutoF();checkF();">Auto Filler</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <h2>In questa pagina ci sono <span id="calcD"></span> div.</h2>
+    <h2>In questa pagina ci sono <span id="calcI"></span> input.</h2>
+    <h2>In questa pagina ci sono <span id="calcL"></span> label.</h2>
+    <br>
+    <br>
+    <a href="form.html">Collegamento</a>
+    <br>
+    <a href="https://www.google.it">Google</a>
+    <br>
+    <hr>
+    <br>
+
+
+    <p id="primo">1:Ciao sono Aurora e mi sono laureata in Ing. Edile presso il Politecnico di Bari.</p>
+    <p id="secondo">2:Ho conseguito la laurea in data 23 Luglio 2019.</p>
+
+    <button id="change">Change color 1</button>
+    <button id="chanche">Change color 2</button>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <input type="text" placeholder="Inserisci testo" id="addText">
+    <button id="inserisci">Inserisci</button>
+
+
+    <br>
+
+    <p id="saluto"> Ciao a tutti</p>
+
+    <button id="aumenta">Aumenta carattere</button>
+    <button id="diminuisci">Diminuisci carattere</button>
+    <br>
+    <br>
+    <button id="clickme">Bye Bye cat</button>
+    <br>
+    <img id="cat" src="img\gatti-divertenti_7.jpg" alt="cat" width="400" height="400">
+
+</body>
+
+</html>
