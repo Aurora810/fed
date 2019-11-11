@@ -6,7 +6,7 @@ function isArmstrong(value) {
     }
     let str = value.toSring();
     for (let i = 0; i < str.length; i++) {
-        let result = i ** str.length;
+        let result = i ** value[str.length];
         result.Number();
         sum += result;
         if (sum === value) {

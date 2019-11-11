@@ -1,23 +1,23 @@
 class furredAnimals {
-    constructor(breed, age) {
-        this.breed = breed;
+    constructor(food, age) {
+        this.food = food;
         this.age = age;
     }
     brush() {
-        return "L'animale ha " + this.age + " anni e mangia " + this.breed;
+        return "L'animale ha " + this.age + " anni e mangia " + this.food;
     }
 }
 class Dog extends furredAnimals {
-    constructor(breed, age) {
-        super(breed, age);
+    constructor(food, age) {
+        super(food, age);
     }
     brush() {
         return super.brush() + " al pollo.";
     }
 }
 class Cat extends furredAnimals {
-    constructor(breed, age) {
-        super(breed, age);
+    constructor(food, age) {
+        super(food, age);
     }
     brush() {
         return super.brush() + " umido.";
