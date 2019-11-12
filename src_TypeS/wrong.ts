@@ -43,7 +43,6 @@ class Persona {
         this.last = last;
     }
     get fullName() {
-
         return this.first + ' ' + this.last;
     }
     set fullName(name: string) {

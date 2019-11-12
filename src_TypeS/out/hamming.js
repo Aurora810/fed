@@ -11,22 +11,16 @@ function hamming(left, right) {
     return result;
 }
 try {
-    console.log(hamming("1011101", "10010014"));
-}
-catch (exc) {
-    console.log(exc);
-}
-finally {
-    console.log('done');
-}
-try {
     console.log(hamming("1011101", "1001001"));
 }
 catch (exc) {
     console.log(exc);
 }
-finally {
-    console.log('done');
+try {
+    console.log(hamming("1011101", "10010014"));
+}
+catch (exc) {
+    console.log(exc);
 }
 try {
     console.log(hamming("1011101", ""));
@@ -34,16 +28,10 @@ try {
 catch (exc) {
     console.log(exc);
 }
-finally {
-    console.log('done');
-}
 try {
-    console.log(hamming("2143896", "2233796 "));
+    console.log(hamming("2143896", "2233796"));
 }
 catch (exc) {
     console.log(exc);
-}
-finally {
-    console.log('done');
 }
 //# sourceMappingURL=hamming.js.map
