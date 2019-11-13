@@ -1,21 +1,16 @@
 function isArmstrong(value) {
-    if (value !== 'number') {
-        return undefined;
-    } if (value < 0 && value % 10 !== 0) {
-        return undefined;
-    }
-    let str = value.toSring();
+    let str = value.toString();
+    let sum = 0;
     for (let i = 0; i < str.length; i++) {
-        let result = 1; 
-        result= result **str.length;
-        sum += result;
-        if (sum === value) {
-            return true;
-        } else {
-            return false;
-        }
-
+        sum += str[i] ** str.length;
+        Number(value);
+    } if (sum === value) {
+        return true;
+    } else {
+        return false;
     }
 }
 
 console.log(isArmstrong(153));
+console.log(isArmstrong(234));
+console.log(isArmstrong(407));
